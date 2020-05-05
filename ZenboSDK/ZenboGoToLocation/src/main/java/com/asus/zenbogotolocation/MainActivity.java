@@ -41,6 +41,7 @@ public class MainActivity extends RobotActivity {
     private Button mButtonGoTo2;
     private Button mButtonGoTo3;
     private Button mButtonGoTo4;
+    private Button private_button_cancel;
 
     // textViews
     private TextView mTextViewPermissionStatus;
@@ -92,6 +93,12 @@ public class MainActivity extends RobotActivity {
                     Room2_private_string = arrayListRooms.get(1).keyword;
                     mTextViewRoom2Keyword.setText( "Go to " +Room2_private_string);
                     mButtonGoTo2.setEnabled(true);
+                    Room3_private_string = arrayListRooms.get(2).keyword;
+                    mTextViewRoom3Keyword.setText( "Go to " +Room3_private_string);
+                    mButtonGoTo3.setEnabled(true);
+                    Room4_private_string = arrayListRooms.get(3).keyword;
+                    mTextViewRoom4Keyword.setText( "Go to " +Room4_private_string);
+                    mButtonGoTo4.setEnabled(true);
                 }
                 catch (Exception e){
                     Log.d("ZenboGoToLocation", "get room info result exception = "+ e);
@@ -186,6 +193,20 @@ public class MainActivity extends RobotActivity {
                         mTextViewDestination.setText(Room4_private_string);
                     }
 
+                }
+            }
+        });
+
+        private_button_cancel = (Button) findViewById(R.id.button_cancel);
+        private_button_cancel.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!mTextViewDestination.equals("")) {
+                    if (isRobotApiInitialed) {
+                        // use robotAPI to go to the position "keyword":
+                        robotAPI.cancelCommand(robotAPI.motion());
+                        mTextViewDestination.setText("Command Cancelled");
+                    }
                 }
             }
         });

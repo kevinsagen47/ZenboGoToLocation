@@ -604,6 +604,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id button_cancel
 id button_getRoomInfo
 id button_goTo
 id button_goTo2

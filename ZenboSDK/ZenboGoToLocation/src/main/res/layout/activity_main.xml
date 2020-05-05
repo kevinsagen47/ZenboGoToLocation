@@ -103,7 +103,7 @@
     <LinearLayout
         android:id="@+id/linearLayout_goTo"
         android:layout_width="wrap_content"
-        android:layout_height="309dp"
+        android:layout_height="366dp"
         android:layout_below="@id/linearLayout_roomInfo"
         android:layout_marginStart="30dp"
         android:layout_marginTop="-58dp"
@@ -155,6 +155,13 @@
             android:layout_width="259dp"
             android:layout_height="wrap_content"
             android:text="No destination set" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Cancel Comand" />
 
     </LinearLayout>
 
