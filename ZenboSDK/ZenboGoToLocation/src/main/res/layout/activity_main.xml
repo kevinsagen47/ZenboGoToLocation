@@ -50,7 +50,7 @@
             android:layout_width="217dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="@string/button_get_room_info" />
+            android:text="@string/string_button_get_room_info" />
 
         <TextView
             android:id="@+id/textView_permission_status"
@@ -114,21 +114,35 @@
             android:id="@+id/textView_roomInfo_1st_goTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/go_to_location" />
+            android:text="@string/string_go_to_location" />
 
         <Button
             android:id="@+id/button_goTo"
             android:layout_width="452dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:text="@string/first_room_info" />
+            android:text="@string/string_room1_info" />
 
         <Button
             android:id="@+id/button_goTo2"
             android:layout_width="452dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:text="@string/room2_info" />
+            android:text="@string/string_room2_info" />
+
+        <Button
+            android:id="@+id/button_goTo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/string_room3_info" />
+
+        <Button
+            android:id="@+id/button_goTo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/string_room4_info" />
 
         <TextView
             android:id="@+id/textView2"

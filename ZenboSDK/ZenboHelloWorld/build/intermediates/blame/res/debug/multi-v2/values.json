@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK_and_SampleCode_v1.0.72.1826_for_studio_3.4.1\\ZenboHelloWorld\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK\\ZenboHelloWorld\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\My Computer\\.gradle\\caches\\transforms-2\\files-2.1\\abd01b63245a5f3f7babd9563054d768\\res\\values\\values.xml",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK_and_SampleCode_v1.0.72.1826_for_studio_3.4.1\\ZenboHelloWorld\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK\\ZenboHelloWorld\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -56,23 +56,6 @@
                         "startOffsets": "16044",
                         "endColumns": "52",
                         "endOffsets": "16092"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK_and_SampleCode_v1.0.72.1826_for_studio_3.4.1\\ZenboHelloWorld\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "90,149",
-                        "endColumns": "57,55",
-                        "endOffsets": "143,200"
-                    },
-                    "to": {
-                        "startLines": "150,151",
-                        "startColumns": "4,4",
-                        "startOffsets": "10088,10146",
-                        "endColumns": "57,55",
-                        "endOffsets": "10141,10197"
                     }
                 },
                 {
@@ -93,7 +76,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK_and_SampleCode_v1.0.72.1826_for_studio_3.4.1\\ZenboHelloWorld\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK\\ZenboHelloWorld\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "90,149",
+                        "endColumns": "57,55",
+                        "endOffsets": "143,200"
+                    },
+                    "to": {
+                        "startLines": "150,151",
+                        "startColumns": "4,4",
+                        "startOffsets": "10088,10146",
+                        "endColumns": "57,55",
+                        "endOffsets": "10141,10197"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK\\ZenboHelloWorld\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
+                    },
+                    "to": {
+                        "startLines": "29,30,31",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1974,2020,2067",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "2015,2062,2113"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK\\ZenboHelloWorld\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -109,23 +126,6 @@
                         "endLines": "254",
                         "endColumns": "12",
                         "endOffsets": "16977"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK_and_SampleCode_v1.0.72.1826_for_studio_3.4.1\\ZenboHelloWorld\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
-                    },
-                    "to": {
-                        "startLines": "29,30,31",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1974,2020,2067",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "2015,2062,2113"
                     }
                 }
             ]

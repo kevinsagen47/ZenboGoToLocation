@@ -29,20 +29,25 @@ public class MainActivity extends RobotActivity {
     private static boolean isRobotApiInitialed = false;
 
     // 1st roomInfo string
-    private String sFirstRoom;
-    private String Room2;
+    private String Room1_private_string;
+    private String Room2_private_string;
+    private String Room3_private_string;
+    private String Room4_private_string;
 
     // buttons
     private Button mButtonGrantPermission;
     private Button mButtonGetRoomInfo;
-    private Button mButtonGetRoomInfo2;
     private Button mButtonGoTo;
     private Button mButtonGoTo2;
+    private Button mButtonGoTo3;
+    private Button mButtonGoTo4;
 
     // textViews
     private TextView mTextViewPermissionStatus;
-    private TextView mTextViewFirstRoomKeyword;
-    private TextView mTextViewSecondRoomKeyword;
+    private TextView mTextViewRoom1Keyword;
+    private TextView mTextViewRoom2Keyword;
+    private TextView mTextViewRoom3Keyword;
+    private TextView mTextViewRoom4Keyword;
     private TextView mTextViewDestination;
 
     @Override
@@ -52,8 +57,10 @@ public class MainActivity extends RobotActivity {
 
         // textViews
         mTextViewPermissionStatus = (TextView) findViewById(R.id.textView_permission_status);
-        mTextViewFirstRoomKeyword = (TextView) findViewById(R.id.button_goTo);
-        mTextViewSecondRoomKeyword = (TextView) findViewById(R.id.button_goTo2);
+        mTextViewRoom1Keyword = (TextView) findViewById(R.id.button_goTo);
+        mTextViewRoom2Keyword = (TextView) findViewById(R.id.button_goTo2);
+        mTextViewRoom3Keyword = (TextView) findViewById(R.id.button_goTo3);
+        mTextViewRoom4Keyword = (TextView) findViewById(R.id.button_goTo4);
         mTextViewDestination = (TextView) findViewById(R.id.Destination);
 
         // buttons
@@ -77,13 +84,13 @@ public class MainActivity extends RobotActivity {
                     //3. use robotAPI to get all room info:
                     ArrayList<RoomInfo> arrayListRooms = robotAPI.contacts.room.getAllRoomInfo();
 
-                    sFirstRoom = arrayListRooms.get(0).keyword;
+                    Room1_private_string = arrayListRooms.get(0).keyword;
                     Log.d("ZenboGoToLocation", "arrayListRooms = " + arrayListRooms);
-                    Log.d("ZenboGoToLocation", "arrayListRooms(0) = " + sFirstRoom);
-                    mTextViewFirstRoomKeyword.setText("Go to "+ sFirstRoom);
+                    Log.d("ZenboGoToLocation", "arrayListRooms(0) = " + Room1_private_string);
+                    mTextViewRoom1Keyword.setText("Go to "+ Room1_private_string);
                     mButtonGoTo.setEnabled(true);
-                    Room2 = arrayListRooms.get(1).keyword;
-                    mTextViewSecondRoomKeyword.setText( "Go to " +Room2);
+                    Room2_private_string = arrayListRooms.get(1).keyword;
+                    mTextViewRoom2Keyword.setText( "Go to " +Room2_private_string);
                     mButtonGoTo2.setEnabled(true);
                 }
                 catch (Exception e){
@@ -121,12 +128,12 @@ public class MainActivity extends RobotActivity {
             @Override
             public void onClick(View v) {
 
-                if(!sFirstRoom.equals("")) {
+                if(!Room1_private_string.equals("")) {
 
                     if(isRobotApiInitialed) {
                         // use robotAPI to go to the position "keyword":
-                        robotAPI.motion.goTo(sFirstRoom);
-                        mTextViewDestination.setText(sFirstRoom);
+                        robotAPI.motion.goTo(Room1_private_string);
+                        mTextViewDestination.setText(Room1_private_string);
                     }
 
                 }
@@ -137,18 +144,51 @@ public class MainActivity extends RobotActivity {
             @Override
             public void onClick(View v) {
 
-                if(!Room2.equals("")) {
+                if(!Room2_private_string.equals("")) {
 
                     if(isRobotApiInitialed) {
                         // use robotAPI to go to the position "keyword":
-                        robotAPI.motion.goTo(Room2);
-                        mTextViewDestination.setText(Room2);
+                        robotAPI.motion.goTo(Room2_private_string);
+                        mTextViewDestination.setText(Room2_private_string);
                     }
 
                 }
             }
         });
 
+        mButtonGoTo3 = (Button) findViewById(R.id.button_goTo3);
+        mButtonGoTo3.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(!Room3_private_string.equals("")) {
+
+                    if(isRobotApiInitialed) {
+                        // use robotAPI to go to the position "keyword":
+                        robotAPI.motion.goTo(Room3_private_string);
+                        mTextViewDestination.setText(Room3_private_string);
+                    }
+
+                }
+            }
+        });
+
+        mButtonGoTo4 = (Button) findViewById(R.id.button_goTo4);
+        mButtonGoTo4.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(!Room4_private_string.equals("")) {
+
+                    if(isRobotApiInitialed) {
+                        // use robotAPI to go to the position "keyword":
+                        robotAPI.motion.goTo(Room4_private_string);
+                        mTextViewDestination.setText(Room4_private_string);
+                    }
+
+                }
+            }
+        });
     }
 
 
@@ -175,12 +215,18 @@ public class MainActivity extends RobotActivity {
         }
 
         // initial params
-        mTextViewFirstRoomKeyword.setText(getString(R.string.first_room_info));
+        mTextViewRoom1Keyword.setText(getString(R.string.string_room1_info));
         mButtonGoTo.setEnabled(false);
-        sFirstRoom="";
-        mTextViewSecondRoomKeyword.setText(getString(R.string.room2_info));
+        Room1_private_string="";
+        mTextViewRoom2Keyword.setText(getString(R.string.string_room2_info));
         mButtonGoTo2.setEnabled(false);
-        Room2="";
+        Room2_private_string="";
+        mTextViewRoom3Keyword.setText(getString(R.string.string_room3_info));
+        mButtonGoTo3.setEnabled(false);
+        Room2_private_string="";
+        mTextViewRoom4Keyword.setText(getString(R.string.string_room4_info));
+        mButtonGoTo4.setEnabled(false);
+        Room2_private_string="";
     }
 
 
@@ -280,3 +326,4 @@ public class MainActivity extends RobotActivity {
     }
     */
 }
+

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK_and_SampleCode_v1.0.72.1826_for_studio_3.4.1\\ZenboGoToLocation\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK\\ZenboGoToLocation\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\My Computer\\.gradle\\caches\\transforms-2\\files-2.1\\e10364d24d5179217de429b1f516e202\\res\\values-v21\\values-v21.xml",
