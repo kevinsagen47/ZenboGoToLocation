@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\My Computer\\Documents\\GitHub\\ZenboGoToLocation\\ZenboSDK_and_SampleCode_v1.0.72.1826_for_studio_3.4.1\\ZenboGoToLocation\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\My Computer\\.gradle\\caches\\transforms-2\\files-2.1\\abd01b63245a5f3f7babd9563054d768\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}
