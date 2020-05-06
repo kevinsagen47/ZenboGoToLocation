@@ -105,30 +105,6 @@ public class MainActivity extends RobotActivity {
                 }
             }
         });
-        /*
-        mButtonGetRoomInfo2 = (Button) findViewById(R.id.button_getRoomInfo2);
-        mButtonGetRoomInfo2.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-
-                    //3. use robotAPI to get all room info:
-                    ArrayList<RoomInfo> arrayListRooms = robotAPI.contacts.room.getAllRoomInfo();
-
-                    Room2 = arrayListRooms.get(1).keyword;
-                    Log.d("ZenboGoToLocation", "arrayListRooms = " + arrayListRooms);
-                    Log.d("ZenboGoToLocation", "arrayListRooms(0) = " + Room2);
-                    mTextViewSecondRoomKeyword.setText(Room2);
-                    mButtonGoTo2.setEnabled(true);
-
-                }
-                catch (Exception e){
-                    Log.d("ZenboGoToLocation", "get room info result exception = "+ e);
-                }
-
-            }
-        });
-        */
 
         mButtonGoTo = (Button) findViewById(R.id.button_goTo);
         mButtonGoTo.setOnClickListener(new Button.OnClickListener() {
@@ -204,7 +180,7 @@ public class MainActivity extends RobotActivity {
                 if(!mTextViewDestination.equals("")) {
                     if (isRobotApiInitialed) {
                         // use robotAPI to go to the position "keyword":
-                        robotAPI.cancelCommand(robotAPI.motion());
+                        robotAPI.cancelCommandAll();
                         mTextViewDestination.setText("Command Cancelled");
                     }
                 }
