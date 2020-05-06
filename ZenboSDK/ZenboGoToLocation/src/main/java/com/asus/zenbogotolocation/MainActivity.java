@@ -75,7 +75,20 @@ public class MainActivity extends RobotActivity {
 
             }
         });
-
+        /*
+        Room1_private_string="Information Desk";
+        Room2_private_string="Movie Watching Area";
+        Room3_private_string="Computer";
+        Room4_private_string="base";
+        mTextViewRoom1Keyword.setText( "Go to " +Room2_private_string);
+        mTextViewRoom2Keyword.setText( "Go to " +Room2_private_string);
+        mTextViewRoom3Keyword.setText( "Go to " +Room2_private_string);
+        mTextViewRoom4Keyword.setText( "Go to " +Room2_private_string);
+        mButtonGoTo.setEnabled(true);
+        mButtonGoTo2.setEnabled(true);
+        mButtonGoTo3.setEnabled(true);
+        mButtonGoTo4.setEnabled(true);
+        */
         mButtonGetRoomInfo = (Button) findViewById(R.id.button_getRoomInfo);
         mButtonGetRoomInfo.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -213,16 +226,16 @@ public class MainActivity extends RobotActivity {
 
         // initial params
         mTextViewRoom1Keyword.setText(getString(R.string.string_room1_info));
-        mButtonGoTo.setEnabled(false);
+        mButtonGoTo.setEnabled(true);
         Room1_private_string="";
         mTextViewRoom2Keyword.setText(getString(R.string.string_room2_info));
-        mButtonGoTo2.setEnabled(false);
+        mButtonGoTo2.setEnabled(true);
         Room2_private_string="";
         mTextViewRoom3Keyword.setText(getString(R.string.string_room3_info));
-        mButtonGoTo3.setEnabled(false);
+        mButtonGoTo3.setEnabled(true);
         Room2_private_string="";
         mTextViewRoom4Keyword.setText(getString(R.string.string_room4_info));
-        mButtonGoTo4.setEnabled(false);
+        mButtonGoTo4.setEnabled(true);
         Room2_private_string="";
     }
 
